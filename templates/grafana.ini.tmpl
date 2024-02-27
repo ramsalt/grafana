@@ -911,6 +911,7 @@ use_pkce = true
 
 # Either "debug", "info", "warn", "error", "critical", default is "info"
 ;level = info
+level = {{ getenv "LOG_LEVEL" "info" }}
 
 # optional settings to set different levels for specific loggers. Ex filters = sqlstore:debug
 ;filters =
